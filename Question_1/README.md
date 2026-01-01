@@ -2,7 +2,7 @@
 *Commands:* id
 *Output:* uid=1000(shainee678) gid=1000(shainee678) groups=1000(shainee678),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),107(netdev)
 *Explanation:* I ran the id command to display my current UID, GID, and all groups, my account belongs to, ensuring my login ID is visible in the output.
-*Screenshot:* ![User Identity] (./screenshots/identity.png)
+*Screenshot:* ![User Identity](./screenshots/identity.png)
 
 ### 2.Workspace Validation
 *Commands:* pwd followed by ls -l
@@ -15,19 +15,19 @@ total 12
 drwxr-xr-x 3 shainee678 shainee678 4096 Jan  1 11:19 project_documents
 -rw-r--r-- 1 shainee678 shainee678   32 Jan  1 10:43 user_info.txt
 *Explanation:* I used pwd to show the full path of my current working directory and ls -l to list all files using the long format for detailed information.
-*Screenshot:* ![Workspace] (./screnshots/worspace.png)
+*Screenshot:* ![Workspace](./screnshots/worspace.png)
 
 ### 3.Environment Confirmation File
 *Commands*: echo "Linux user environment verified" > user_info.txt
 *Output:* 
 *Explanation:* I created a new text file named user_info.txt and wrote the required verification string into it using output redirection.
-*Screenshot:* ![Create File] (./screenshots/create_file.png)
+*Screenshot:* ![Create File](./screenshots/create_file.png)
 
 ### 4.File Integrity Check
 *Commands:* wc -c user_info.txt
 *Output:* 32 user_info.txt
 *Explanation:* I used the wc command with the -c flag to count and display the total number of characters present in the user_info.txt file.
-*Screenshot:* ![Integrity Check] (./screenshots/integrity.png)
+*Screenshot:* ![Integrity Check](./screenshots/integrity.png)
 
 ### 5.Learning the tools
 *Commands:* man mkdir
@@ -83,26 +83,26 @@ SEE ALSO
 GNU coreutils 9.4                                                                                April 2024                                                                                        MKDIR(1)
  Manual page mkdir(1) line 1 (press h for help or q to quit)
 *Explanation:* I accessed the manual page for mkdir to identify useful options such as -p, which allows the creation of parent directories as needed.
-*Screenshot:* 
+*Screenshot:* ![Man Page](./screenshots/man_page.png)
 
 ### 6.Home Directory Inspection
 *Commands:* ls ~
 *Output:* log.txt  project_documents  user_info.txt
 *Explanation:* I listed the contents of my home directory; by default, the output is sorted alphabetically, satisfying the environment check requirement.
-*Screenshot:* ![Man Page] (./screenshots/man_page.png)
+*Screenshot:* ![Home List](./screenshots/home_list.png)
 
 ### 7.Log Investigation
 *Commands:* grep "admin" log.txt
 *Output:* The admin is logged in
 *Explanation:* I utilised the grep command to search for the specific keyword "admin" inside log.txt and display only the lines that matched, after creating a file using the command 
               echo "The admin is logged in" > log.txt
-*Screenshot:* 
+*Screenshot:* ![Log Grep](./screenshots/grep.png)
 
 ### 8.System Information Check
 *Commands:* uname -r
 *Output:* 6.6.87.2-microsoft-standard-WSL2
 *Explanation:*  I executed uname -r to retrieve and display the specific version of the Linux kennel currently running on the lab machine.
-*Screenshot:* ![Home List] (./screenshots/home_list.png)
+*Screenshot:* ![Kernel Version](./screenshots/kernel.png)
 
 ### 9.Network Connectivity Test
 *Commands:* ping -c 4 www.google.com
@@ -116,10 +116,10 @@ GNU coreutils 9.4                                                               
 4 packets transmitted, 4 received, 0% packet loss, time 3097ms
 rtt min/avg/max/mdev = 47.797/48.518/49.430/0.653 ms
 *Explanation:* I sent 4 ICMP echo request packets to Google's server to verify that the lab machine has active outbound network connectivity.
-*Screenshot:* ![Log Grep] (./screenshots/grep.png)
+*Screenshot:* ![Ping Test](./screenshots/ping.png)
 
 ### 10.System Health Awareness
 *Commands:* uptime
 *Output:* 15:53:07 up  1:13,  1 user,  load average: 0.00, 0.00, 0.00
 *Explanation:* I ran the uptime command to view the system's total run time, the number of logged-in users, and the current CPU load averages.
-*Screenshot:* ![Kernel Version] (./screenshots/kernel.png)
+*Screenshot:* ![System Uptime](./screenshots/uptime.png)
