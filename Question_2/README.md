@@ -38,13 +38,13 @@
 *Commands:* mkdir ~/projects_documents/archive
 *Output:* No output returned by terminal but the command was executed succesfully.
 *Explanation:* I created a subdirectory to named archive inside the renamed project folder to organize older or duplicate files.
-*Screenshot:* ![Archive Folder](./screesnhots/archive_dir.png)
+*Screenshot:* ![Archive Folder](./screenshots/archive_dir.png)
 
 ### 8.File Organization
 *Commands:* mv ~/project_documents/plan_copy.txt ~/project_documents/archive
 *Output:* No output returned by terminal but the command was executed succesfully.
 *Explanation:* I moved the duplicate file in to the archive subdirectory to clean up the main project workspace.
-*Screenshot:* ![Move File](./screesnhots/move.png)
+*Screenshot:* ![Move File](./screenshots/move.png)
 
 ### 9.Recursive Listing
 *Commands:* ls -R ~/project_documents
