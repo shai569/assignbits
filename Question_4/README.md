@@ -45,6 +45,7 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7286.8 avail Mem
           [3]+  Done                    nice -n 10 sleep 50
 *Explanation:* I intiated a new process with a modified "niceness" value of 10 to change its scheduling priority. By checking the process status, I confirmed the updated priority level compared to standard processes.
 *Screenshot:* ![Niceness](./screenshots/nice.png)
+              ![Niceness](./screenshots/nicenes.png)
 
 ### 6.Memory Usage Monitoring
 *Commands:* free -h
